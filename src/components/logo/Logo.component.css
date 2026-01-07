@@ -1,0 +1,24 @@
+.container-logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-right: 2px solid var(--color-border-disabled);
+    /* padding-right: var(--spacing-friend); */
+}
+
+.container-logo .logo-name{
+    text-align: start;
+}
+
+.container-logo .logo-name>p {
+    font-size: 40px;
+    margin: 0;
+}
+
+.container-logo .logo-description{
+    font-size: 16px;
+    text-align: start;
+    padding-top: var(--spacing-friend);
+}

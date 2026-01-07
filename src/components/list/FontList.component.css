@@ -1,0 +1,57 @@
+.container-list-main{
+    width: 100%;
+    height: 100%;
+    padding: var(--spacing-boss) 0 var(--spacing-boss) 0;
+    box-sizing: border-box;
+}
+
+.container-list-main .list-body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    padding-bottom: var(--spacing-boss);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.container-list-main [class*=list-element]{
+    display: flex;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid var(--color-border-disabled);
+    border-bottom: 2px solid var(--color-border-disabled);
+    font-size: 40px;
+    color: var(--color-text);
+    padding: var(--spacing-collegue) var(--spacing-collegue) var(--spacing-collegue) var(--spacing-boss);
+    box-sizing: border-box;
+}
+
+.container-list-main [class*=list-element].active {
+    border-color: var(--color-border-enabled);
+    font-size: 80px;
+    color: var(--color-border-enabled);
+}
+
+
+/* SCROLLBAR */
+.list-body::-webkit-scrollbar{
+    width: 4px;
+    background-color: var(--color-accent);
+}
+
+.list-body::-webkit-scrollbar-thumb{
+    background-color: var(--color-border-enabled);
+    border-radius: 2px;
+}
+
+/* LIST DECORATIONS */
+.container-list-main li {
+    list-style: none;
+    cursor: default;
+}

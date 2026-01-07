@@ -1,0 +1,28 @@
+.container-preview-main{
+    width: 100%;
+}
+
+.preview-display-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+}
+
+.letter-span-element{
+    background-color: var(--color-text);
+    color: var(--color-border-enabled);
+    border: 1px solid var(--color-bg);
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    padding-bottom: var(--spacing-friend);
+    margin-bottom: var(--spacing-friend);
+}
+
+.letter-span-element.active{
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border-disabled);
+    color: var(--color-border-enabled);
+}
