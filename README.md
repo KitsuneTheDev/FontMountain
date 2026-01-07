@@ -19,4 +19,4 @@ Font display and preview page which is made by pure JS.
 
 ## Demo
 
-![demo gif](/src/assets/demo/FontMountain.gif)
+![demo gif](src/assets/demo/FontMountain.gif)
